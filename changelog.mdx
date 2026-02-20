@@ -1,0 +1,147 @@
+---
+title: Changelog
+description: Review the version history of HolyDuck, including recent updates, new features, and fixes.
+---
+
+## Version History
+
+Stay informed about HolyDuck's latest improvements, features, and fixes. Review changes by version below, organized newest first. Each release includes details on new capabilities, bug resolutions, and any breaking changes.
+
+<Columns cols={3}>
+  <Card title="v2.1.0" icon="zap" href="#v2-1-0">
+    Latest release with performance boosts.
+  </Card>
+  <Card title="v2.0.0" icon="rocket" href="#v2-0-0">
+    Major update introducing real-time collaboration.
+  </Card>
+  <Card title="v1.0.0" icon="package" href="#v1-0-0">
+    Initial stable release.
+  </Card>
+</Columns>
+
+<Update id="v2-1-0" label="2024-10-15" description="v2.1.0" tags={["feature", "improvement", "bugfix"]}>
+
+## New Features
+
+- Added real-time preview for markdown editing
+- Introduced custom themes with CSS variables support
+- New export options: PDF and HTML with branding
+
+## Improvements
+
+- Enhanced search with fuzzy matching and filters
+- Optimized loading times by `>30%` for large docs
+- Better mobile responsiveness for documentation pages
+
+## Bug Fixes
+
+- Fixed rendering issues with nested lists
+- Resolved authentication token refresh errors
+- Corrected image upload failures in certain browsers
+
+</Update>
+
+<Update id="v2-0-0" label="2024-09-20" description="v2.0.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Real-time collaboration with multiple users
+- Integrated version history and rollback
+- Embeddable widgets for third-party integrations
+
+## Breaking Changes
+
+- Updated API endpoints to use `/v2/` prefix
+- Removed legacy `{legacyField}` support - migrate to `data.field`
+
+## Improvements
+
+- Streamlined dashboard with customizable widgets
+- Added keyboard shortcuts for common actions
+
+## Bug Fixes
+
+- Fixed sync issues during offline mode
+- Patched security vulnerability in webhook handling
+
+</Update>
+
+<Update id="v1-0-0" label="2024-08-10" description="v1.0.0" tags={["feature"]}>
+
+## New Features
+
+- Core documentation editor with MDX support
+- User authentication via OAuth and API keys
+- Basic dashboard for project management
+- Page templates and navigation builder
+
+## Improvements
+
+- Syntax highlighting for 20+ languages
+- Drag-and-drop file uploads
+
+</Update>
+
+## Upgrading to the Latest Version
+
+Follow these steps to upgrade HolyDuck smoothly. Always back up your data first.
+
+<Callout kind="alert">
+Before upgrading, review breaking changes in the release notes above.
+</Callout>
+
+<Steps>
+  <Step title="Backup Your Data" icon="database">
+
+    Export your projects to avoid data loss.
+
+    ```bash
+    holyduck export --project=all --format=json > backup.json
+    ```
+
+  </Step>
+  <Step title="Update Package" icon="download">
+
+    <Tabs>
+      <Tab title="npm" icon="package">
+````bash
+npm install holyduck@latest
+````
+      </Tab>
+      <Tab title="yarn" icon="package">
+````bash
+yarn add holyduck@latest
+````
+      </Tab>
+      <Tab title="Docker" icon="docker">
+````bash
+docker pull holyduck/holyduck:latest
+docker run -p 3000:3000 holyduck/holyduck:latest
+````
+      </Tab>
+    </Tabs>
+
+  </Step>
+  <Step title="Run Migrations" icon="settings">
+
+    Apply database schema updates.
+
+    ```bash
+    holyduck migrate up
+    ```
+
+  </Step>
+  <Step title="Restart Service" icon="refresh-cw">
+
+    Restart to apply changes.
+
+    ```bash
+    holyduck restart
+    ```
+
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+Subscribe to our GitHub releases or RSS feed for instant notifications on new versions. Check the [full release notes](https://github.com/holyduck/releases) for detailed migration guides.
+</Callout>

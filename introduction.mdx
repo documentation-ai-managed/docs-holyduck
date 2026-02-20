@@ -1,0 +1,98 @@
+---
+title: Introduction to HolyDuck
+description: Discover HolyDuck, your default documentation space for organizing and managing project documentation, with an overview of key features and navigation.
+---
+
+<Callout kind="info" title="Starter Kit Template">
+  This documentation was generated as a starter kit template based on your brand. Please review and customize the content to accurately reflect your product's features, APIs, and capabilities.
+</Callout>
+
+## What is HolyDuck?
+
+HolyDuck provides a centralized space for your project documentation. You can create, organize, and collaborate on docs with your team effortlessly. It supports version control, search, and easy sharing, making it ideal for technical teams, product managers, and developers.
+
+Unlike traditional wikis, HolyDuck uses a modern MDX-based system that renders rich components like interactive tabs and code examples. Start by inviting team members and structuring your content with folders and pages.
+
+## Key Features
+
+<Columns cols={3}>
+  <Card title="Organized Spaces" icon="folder" href="#features">
+    Create unlimited documentation spaces for different projects. Use folders, tags, and search to keep everything accessible.
+  </Card>
+  <Card title="Rich Editing" icon="edit-3" href="#features">
+    Edit with Markdown and MDX. Embed components like `<Callout>`s, steps, and diagrams for engaging docs.
+  </Card>
+  <Card title="Collaboration" icon="users" href="#features">
+    Real-time editing, comments, and version history. Track changes with `@mentions` and approvals.
+  </Card>
+</Columns>
+
+## Benefits for Teams
+
+HolyDuck streamlines your documentation workflow. Teams save time by avoiding scattered Google Docs or Notion pages. You gain better knowledge sharing, onboarding for new hires becomes faster, and compliance stays simple with audit logs.
+
+<Tabs>
+  <Tab title="Developers" icon="code">
+    Embed runnable code examples and API references directly in docs.
+  </Tab>
+  <Tab title="Product Teams" icon="bar-chart-3">
+    Create user guides with screenshots, videos, and interactive elements.
+  </Tab>
+  <Tab title="Support" icon="headphones">
+    Build searchable knowledge bases with expandable FAQs.
+  </Tab>
+</Tabs>
+
+## Quick Navigation Guide
+
+Get started quickly with these steps.
+
+<Steps>
+  <Step title="Create Your First Space" icon="plus">
+    Log in at `https://app.holduck.com` and click **New Space**. Name it for your project.
+  </Step>
+  <Step title="Add Documentation" icon="file-plus">
+    Create pages using the editor. Use H2 headings (`##`) and components like `<Card>`.
+  </Step>
+  <Step title="Invite Collaborators" icon="user-plus">
+    Share the space link or add emails. Set permissions for view, edit, or admin.
+  </Step>
+  <Step title="Publish and Share" icon="share-2">
+    Publish changes and embed pages in your apps or share public links.
+  </Step>
+</Steps>
+
+<CodeGroup tabs="JavaScript,cURL">
+  ```javascript
+  // Fetch your docs via API
+  const response = await fetch('https://api.example.com/v1/spaces/{spaceId}/pages', {
+    headers: { Authorization: `Bearer ${YOUR_API_KEY}` }
+  });
+  const pages = await response.json();
+  console.log(pages);
+  ```
+  ```bash
+  curl -H "Authorization: Bearer YOUR_API_KEY" \
+       https://api.example.com/v1/spaces/{spaceId}/pages
+  ```
+</CodeGroup>
+
+## Brand Guidelines
+
+Follow these to maintain consistency.
+
+<Expandable title="Primary Color" default-open="true">
+  Use `#3B82F6` as your primary brand color for buttons and accents. Pair with neutral grays for text.
+</Expandable>
+
+<Expandable title="Typography">
+  Headings: Bold sans-serif. Body: Readable font at 16px minimum.
+</Expandable>
+
+<Expandable title="Icons">
+  Use Lucide icons like `zap` or `shield`. Keep them simple and consistent.
+</Expandable>
+
+<Callout kind="tip">
+  Explore [Quickstart](/quickstart) next to set up your first project. Customize these docs to fit HolyDuck perfectly.
+</Callout>
