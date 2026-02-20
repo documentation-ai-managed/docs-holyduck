@@ -15,40 +15,28 @@
         "icon": "book",
         "groups": [
           {
-            "group": "Getting Started",
+            "group": "С чего начать",
             "icon": "rocket",
             "pages": [
               {
-                "title": "Introduction",
+                "title": "Введение",
                 "path": "introduction",
                 "icon": "home"
               },
               {
-                "title": "Quickstart",
+                "title": "Правила сервера",
+                "path": "rules",
+                "icon": "file-text"
+              },
+              {
+                "title": "Быстрый старт",
                 "path": "quickstart",
                 "icon": "zap"
-              }
-            ]
-          },
-          {
-            "group": "Core Concepts",
-            "icon": "layers",
-            "pages": [
+              },
               {
-                "title": "Features",
-                "path": "features",
-                "icon": "file-text"
-              }
-            ]
-          },
-          {
-            "group": "Advanced",
-            "icon": "server",
-            "pages": [
-              {
-                "title": "Integrations",
-                "path": "integrations",
-                "icon": "plug"
+                "title": "Основные плагины",
+                "path": "plugins",
+                "icon": "puzzle"
               }
             ]
           }

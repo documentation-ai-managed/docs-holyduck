@@ -1,108 +1,110 @@
 ---
-title: Getting Started with HolyDuck
-description: Set up your HolyDuck account and create your first documentation space quickly to begin managing projects.
+title: Быстрый старт на сервере HolyDuck
+description: Узнайте, как подготовить клиент, добавить HolyDuck в список серверов Minecraft и зайти на ванильный сервер без привата и грифа.
 ---
 
-## Prerequisites
+## Перед тем как зайти
 
-<Callout kind="info" title="Before You Begin">
-You need a web browser (Chrome, Firefox, Safari, or Edge) and an email address for account verification. No software installation required.
+Начни с базовой проверки, чтобы без лишних ошибок попасть на сервер.
+
+<Callout kind="info">
+
+Сервер ванильный, без привата. Гриферство и воровство запрещены. Полные правила: [правила сервера](/rules).
+
 </Callout>
 
-## Sign Up for an Account
+<Columns cols={3}>
+  <Card title="Версия Minecraft" icon="monitor">
+    Клиент Java Edition версии `1.21.11`.
+  </Card>
+  <Card title="Подключение" icon="cloud">
+    Стабильный интернет без активного VPN или прокси, которые блокируют соединение.
+  </Card>
+  <Card title="Discord (опционально)" icon="users">
+    Аккаунт Discord на случай, если потребуется подтверждение или связь с администрацией.
+  </Card>
+</Columns>
 
-Follow these steps to create your HolyDuck account.
+## Добавить сервер в список и подключиться
+
+Выполни эти шаги, чтобы добавить HolyDuck в список мультиплеера и зайти на сервер.
 
 <Steps>
-  <Step title="Visit HolyDuck" icon="external-link">
-    Navigate to the [HolyDuck signup page](https://app.holydocs.com/signup).
+  <Step title="Открой Minecraft и перейди в мультиплеер" icon="play-circle">
+    Запусти Minecraft версии `1.21.11`, в главном меню нажми **Multiplayer** / **Многопользовательская игра**.
   </Step>
-  <Step title="Enter Your Details" icon="user">
-    Provide your email, create a strong password, and complete the CAPTCHA if prompted.
-    
+
+  <Step title="Добавь сервер" icon="plus">
+    Нажми **Add Server** / **Добавить сервер**.
+
+    Введи любое удобное название, например `HolyDuck`, а в поле адреса сервера укажи для Java‑версии: `65.21.84.139:33069`.
+
+    <Callout kind="info">
+
+    Для Bedrock Edition укажи адрес `65.21.84.139` и порт `34287`.
+
+    </Callout>
+
     <Callout kind="tip">
-      Use a business email for team collaborations.
+
+    Если при вводе адреса появляется ошибка формата, проверь, что нет лишних пробелов и символов.
+
     </Callout>
   </Step>
-  <Step title="Verify Email" icon="mail">
-    Check your inbox and click the verification link. This enables full access.
+
+  <Step title="Сохрани и выбери сервер" icon="folder">
+    Нажми **Done** / **Готово**, вернись к списку серверов и выбери добавленный сервер HolyDuck.
+  </Step>
+
+  <Step title="Подключись к серверу" icon="arrow-right">
+    Нажми **Join Server** / **Присоединиться к серверу** и дождись загрузки мира.
+
+    <Callout kind="info">
+
+    На первом входе сервер может попросить пройти простую проверку или подтвердиться через Discord. Следуй подсказкам в чате.
+
+    </Callout>
   </Step>
 </Steps>
 
-## Create Your First Documentation Space
+## Правила мира: без привата и без грифа
 
-Once logged in, set up a space to organize your project docs.
+Игровой мир без привата и регионов: любая постройка уязвима для гриферов, поэтому действуют строгие ограничения.
+
+<Callout kind="alert">
+
+Уважай чужие постройки. Гриферство, кражи, порча или захват чужих домов и ферм запрещены. За нарушение возможен бан без предупреждения. Полный текст правил: [правила сервера](/rules).
+
+</Callout>
+
+Размещай базу на безопасном расстоянии от спавна, не ломай чужие сундуки и блоки, не забирай ресурсы, которые явно принадлежат другому игроку.
+
+## Если не получается зайти
+
+Используй этот короткий чек‑лист, если клиент не пускает на сервер или появляется ошибка.
 
 <Steps>
-  <Step title="Access Dashboard" icon="home">
-    From the dashboard, click **New Space**.
+  <Step title="Проверь версию клиента" icon="info">
+    Убедись, что у тебя стоит та же версия, что и у сервера: `1.21.11`.
+
+    Если версия не совпадает, поменяй её в лаунчере и попробуй снова.
   </Step>
-  <Step title="Configure Space" icon="settings">
-    Enter a name like `My Project Docs`, select visibility (Private or Public), and choose a color scheme.
+
+  <Step title="Уточни whitelist или верификацию" icon="shield">
+    Если видишь сообщение про отсутствие доступа или whitelist, возможно, нужно предварительно зарегистрироваться или подтвердиться в Discord.
+
+    Проверь описание сервера и правила, свяжись с администрацией через Discord, если требуется.
   </Step>
-  <Step title="Save and Enter" icon="check-circle">
-    Click **Create**. You now land in your new space's editor.
+
+  <Step title="Проверь интернет и маршрутизацию" icon="alert-triangle">
+    Если клиент пишет `Timed out` или `Cannot connect to server`, перезапусти роутер, отключи VPN/прокси и попробуй ещё раз.
+
+    Если проблема сохраняется, подожди несколько минут: сервер или твой провайдер могут временно давать сбои.
   </Step>
 </Steps>
 
-## Basic Interface Tour
+<Callout kind="tip">
 
-<Columns cols={2}>
-  <Card title="Editor Panel" icon="edit-3">
-    Write and format Markdown or rich text documents here. Use the toolbar for headings, lists, and embeds.
-  </Card>
-  <Card title="Sidebar Navigation" icon="menu">
-    Manage pages, folders, and settings. Drag to reorganize your documentation structure.
-  </Card>
-  <Card title="Preview Mode" icon="eye">
-    Toggle real-time preview to see how your docs render for readers.
-  </Card>
-  <Card title="Publish Button" icon="globe">
-    Deploy changes live with one click. Track versions automatically.
-  </Card>
-</Columns>
+Если после этих шагов всё ещё не получается зайти, сделай скриншот ошибки и обратись к администрации на серверном Discord.
 
-## Upload Your First Document
-
-Add content to your space using these methods.
-
-<Tabs>
-  <Tab title="File Upload" icon="upload">
-    <Steps>
-      <Step title="Drag and Drop">
-        Drag files (Markdown, PDF, images) into the editor.
-      </Step>
-      <Step title="Select Files">
-        Click the upload icon and choose from your device.
-      </Step>
-    </Steps>
-  </Tab>
-  <Tab title="Paste Content" icon="clipboard">
-    Copy text or Markdown from elsewhere and paste directly. HolyDuck auto-formats it.
-  </Tab>
-  <Tab title="Import from GitHub" icon="github">
-    Connect your repo via **Integrations** > **GitHub** and sync Markdown files automatically.
-  </Tab>
-</Tabs>
-
-## Next Steps
-
-<Expandable title="Need more guidance?" default-open="true">
-Explore these resources to dive deeper:
-</Expandable>
-
-<Columns cols={3}>
-  <Card title="Authentication" icon="shield" href="/authentication">
-    Secure your spaces with API keys and teams.
-  </Card>
-  <Card title="Advanced Features" icon="sparkles" href="/features">
-    Embed videos, custom domains, and analytics.
-  </Card>
-  <Card title="Help Center" icon="help-circle" href="/help-center">
-    FAQs and troubleshooting.
-  </Card>
-</Columns>
-
-<Callout kind="success">
-Congratulations! You've set up HolyDuck and uploaded your first document. Start building your knowledge base today.
 </Callout>
