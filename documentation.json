@@ -19,6 +19,11 @@
             "icon": "rocket",
             "pages": [
               {
+                "title": "Быстрый старт",
+                "path": "quickstart",
+                "icon": "zap"
+              },
+              {
                 "title": "Введение",
                 "path": "introduction",
                 "icon": "home"
@@ -27,11 +32,6 @@
                 "title": "Правила сервера",
                 "path": "rules",
                 "icon": "file-text"
-              },
-              {
-                "title": "Быстрый старт",
-                "path": "quickstart",
-                "icon": "zap"
               },
               {
                 "title": "Основные плагины",
